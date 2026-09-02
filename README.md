@@ -1,2 +1,0 @@
-# Mojuu
-MOJUU
