@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lost In Space, Found In You ❤️</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#020617;
+    color:white;
+    overflow-x:hidden;
+}
+
+#stars{
+    position:fixed;
+    inset:0;
+    z-index:-1;
+}
+
+.star{
+    position:absolute;
+    background:white;
+    border-radius:50%;
+    animation:twinkle 4s infinite;
+}
+
+@keyframes twinkle{
+    0%,100%{opacity:.2;}
+    50%{opacity:1;}
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:4rem;
+    text-shadow:0 0 25px #60a5fa;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:1.2rem;
+}
+
+.glass{
+    margin-top:30px;
+    background:rgba(255,255,255,.08);
+    padding:25px;
+    border-radius:20px;
+    backdrop-filter:blur(10px);
+}
+
+.section{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.solar-system{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+.orbit{
+    width:50px;
+    height:2px;
+    background:rgba(255,255,255,.3);
+}
+
+.planet-card{
+    cursor:pointer;
+    transition:.4s;
+}
+
+.planet-card:hover{
+    transform:translateY(-10px);
+}
+
+.planet-img{
+    width:140px;
+    height:140px;
+    object-fit:contain;
+    filter:drop-shadow(0 0 25px rgba(255,255,255,.55));
+}
+
+.memory-box{
+    max-width:850px;
+    margin:40px auto;
+    padding:25px;
+    border-radius:20px;
+    background:rgba(255,255,255,.08);
+}
+
+.button-love{
+    padding:18px 35px;
+    border:none;
+    border-radius:40px;
+    cursor:pointer;
+    font-size:1.1rem;
+    font-weight:700;
+}
+
+.message{
+    margin:25px auto;
+    max-width:700px;
+    padding:20px;
+    border-radius:20px;
+    background:rgba(255,255,255,.08);
+}
+
+.timeline{
+    max-width:800px;
+    margin:auto;
+    text-align:left;
+}
+
+.event{
+    background:rgba(255,255,255,.08);
+    padding:20px;
+    margin:15px 0;
+    border-left:3px solid white;
+}
+
+.secret-star{
+    margin-top:30px;
+    font-size:2rem;
+    cursor:pointer;
+}
+
+footer{
+    padding:50px;
+    text-align:center;
+}
+
+@media(max-width:900px){
+
+    .solar-system{
+        flex-direction:column;
+    }
+
+    .orbit{
+        width:2px;
+        height:40px;
+    }
+
+    .hero h1{
+        font-size:2.4rem;
+    }
+
+    .planet-img{
+        width:120px;
+        height:120px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="stars"></div>
+
+<section class="hero">
+
+<h1>🌌 Lost In Space, Found In You 🌌</h1>
+
+<p>Ajuu ❤️ Moo</p>
+
+<div class="glass">
+
+<h2>NASA Mission Log</h2>
+
+<br>
+
+<p>
+Astronaut Ajuu: Coimbatore 🌍
+<br>
+Astronaut Moo: Chennai 🌍
+</p>
+
+<br>
+
+<p>
+Distance: 500 km
+<br>
+Connection Strength: Infinite ❤️
+</p>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>🪐 Our Solar System</h2>
+
+<p>Every planet holds a chapter of our story.</p>
+
+<div class="solar-system">
+
+<div class="planet-card"
+onclick="showMemory('☿ MERCURY<br><br><b>First Message</b><br><br>I guess formal introductions are necessary so Hi<br><br>20 August 2025 ❤️')">
+
+<img src="images/mercury.png" class
+<p>First Message</p>
+
+</div>
+
+<div class="orbit"></div>
+
+<div class="planet-card"
+onclick="showMemory('♀ VENUS<br><br><b>First Call</b><br><br>27 June 2026 Midnight<br><br>The moment your voice became my favorite sound ❤️')">
+
+<img srcenus.png
+<h3>Venus</h3>
+<p>First Call</p>
+
+</div>
+
+<div class="orbit"></div>
+
+<div class="planet-card"
+onclick="showMemory('🌍 EARTH<br><br><b>Current Status</b><br><br>Boyfriend/Girlfriend?<br><br>Nah. She is my wife. Just not legally yet ❤️')">
+
+images/earth.png
+<h3>Earth</h3>
+<p>Present Day</p>
+
+</div>
+
+<div class="orbit"></div>
+
+<div class="planet-card"
+onclick="showMemory('🚀 MARS<br><br><b>Favorite Memory</b><br><br>My favorite memory is simply every moment I get to be with you ❤️')">
+
+<img srcars.png
+<h3>Mars</h3>
+<p>Favorite Memory</p>
+
+</div>
+
+<div class="orbit"></div>
+
+<div class="planet-card"
+onclick="showMemory('🪐 SATURN<br><br><b>Future Dream</b><br><br>MOSHIKA ARJUN ❤️<br><br>DEV ARJUN 👶<br>TARA ARJUN 👶')">
+
+<img srcaturn.png
+<h3>Saturn</h3>
+<p>Future Dream</p>
+
+</div>
+
+</div>
+
+<div class="memory-box" id="memoryBox">
+Click any planet to reveal a memory ❤️
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>📡 Press When You Miss Me ❤️</h2>
+
+<button class="button-love" onclick="randomMessage()">
+❤️ PRESS ME ❤️
+</button>
+
+<div id="message" class="message">
+Incoming transmission waiting...
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>⭐ Constellation Timeline</h2>
+
+<div class="timeline">
+
+<div class="event">
+⭐ 20 August 2025
+<br>
+First Message
+</div>
+
+<div class="event">
+⭐ 27 June 2026
+<br>
+First Call
+</div>
+
+<div class="event">
+⭐ 18 July 2026
+<br>
+First Meeting
+</div>
+
+<div class="event">
+⭐ Future
+<br>
+Closing the distance forever ❤️
+</div>
+
+</div>
+
+<div class="secret-star" onclick="secretStar()">
+⭐
+</div>
+
+</section>
+
+<footer>
+
+<h2>
+Lost In Space.
+<br>
+Found In You.
+</h2>
+
+<br>
+
+<p>
+Forever Yours,
+<br>
+Ajuu ❤️
+</p>
+
+</footer>
+
+<script>
+
+const starContainer = document.getElementById("stars");
+
+for(let i=0;i<350;i++){
+
+ const star=document.createElement("div");
+ star.className="star";
+
+ let size=Math.random()*3;
+
+ star.style.width=size+"px";
+ star.style.height=size+"px";
+ star.style.left=Math.random()*100+"%";
+ star.style.top=Math.random()*100+"%";
+
+ starContainer.appendChild(star);
+}
+
+function showMemory(text){
+    document.getElementById("memoryBox").innerHTML=text;
+}
+
+const messages = [
+"📞 Call me.",
+"🤳 Send me a selfie.",
+"❤️ I love you.",
+"💌 Tell me something you've never told me before.",
+"🎥 5-minute video call. No excuses.",
+"🤗 Close your eyes. Imagine I'm hugging you.",
+"🌙 Send me a voice note.",
+"😘 One virtual kiss required.",
+"💭 What are you thinking about right now?",
+"📷 Send your cutest picture.",
+"❤️ Reminder: I'm crazy about you.",
+"🚀 Mission Control requests immediate cuddles.",
+"⭐ If you were here I'd never let go.",
+"🌍 Distance is temporary.",
+"💖 You're my favorite notification.",
+"🎵 Tell me the song you're listening to.",
+"☕ Let's have a virtual coffee date.",
+"📡 Incoming transmission: I miss you.",
+"🥰 Smile for me.",
+"❤️ Future Mrs. Arjun detected."
+];
+
+function randomMessage(){
+
+    const random =
+    messages[Math.floor(Math.random()*messages.length)];
+
+    document.getElementById("message").innerHTML=random;
+}
+
+let clicks=0;
+
+function secretStar(){
+
+    clicks++;
+
+    if(clicks>=5){
+
+        alert("🎁 Congratulations, you unlocked a free hug voucher ❤️");
+
+        clicks=0;
+    }
+}
+
+/* Shooting Stars */
+
+setInterval(()=>{
+
+    let shooting=document.createElement("div");
+
+    shooting.style.position="fixed";
+    shooting.style.top="-100px";
+    shooting.style.left="100%";
+    shooting.style.width="3px";
+    shooting.style.height="120px";
+    shooting.style.background="linear-gradient(white,transparent)";
+    shooting.style.transform="rotate(45deg)";
+    shooting.style.zIndex="999";
+
+    document.body.appendChild(shooting);
+
+    shooting.animate(
+    [
+        {transform:"translate(0,0) rotate(45deg)"},
+        {transform:"translate(-1400px,1400px) rotate(45deg)"}
+    ],
+    {
+        duration:3000
+    });
+
+    setTimeout(()=>{
+        shooting.remove();
+    },3000);
+
+},6000);
+
+</script>
+
+</body>
+</html>
